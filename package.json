@@ -1,0 +1,26 @@
+{
+  "name": "boc.web.framework",
+  "version": "1.0.0",
+  "description": "A simple JS web framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1 -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbraithwaite/boc-web-framework.git"
+  },
+  "author": "https://github.com/bbraithwaite",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbraithwaite/boc-web-framework/issues"
+  },
+  "homepage": "https://github.com/bbraithwaite/boc-web-framework",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "http-server": "^0.7.5"
+  }
+}

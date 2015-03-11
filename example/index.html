@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript" src="http://localhost:8000/lib/boc.qs.js"></script>
+	<script type="text/javascript" src="http://localhost:8000/lib/boc.web.framework.js"></script>
+	<body>
+
+		<div id="home" style="display:none;">
+			<h1>Home</h1>
+			<p>This is the homepage.</p>
+			<ul>
+				<li><a href="#/category/beverages">Beverages</a></li>
+				<li><a href="#/category/condiments">Condiments</a></li>
+			</ul>
+		</div>
+
+		<div id="category" style="display:none;">
+			<h1>Category</h1>
+			<p>Here are some categories.</p>
+		</div>
+
+		<script type="text/javascript">
+
+			function main() {
+				var app = new Framework();
+				
+				app.addController(function HomeController() {
+					return {
+						route: '/',
+						render: function() {
+							this.view.visible(true);
+						}
+					}
+				});
+
+				app.addController(function CategoryController() {
+					return {
+						route: '/category',
+						render: function() {
+							this.view.visible(true);
+						}
+					}
+				});
+
+				app.load(window.location.hash);
+			};
+
+			document.addEventListener("DOMContentLoaded", main);
+		</script>
+	</body>
+</html>
