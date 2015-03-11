@@ -1,6 +1,7 @@
 {
   "name": "boc.web.framework",
   "version": "1.0.0",
+  "private" : true,
   "homepage": "https://github.com/bbraithwaite/boc-web-framework",
   "authors": [
     "https://github.com/bbraithwaite"
